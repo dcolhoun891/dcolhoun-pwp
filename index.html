@@ -2,44 +2,84 @@
 <!--dcolhoun@cnm.edu-->
 <!--Fullstack Cohort 34-->
 
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
-
 <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta charset="UTF-8">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-            <title>Martha Colhoun, Illustrator</title>
-
-        <link rel="stylesheet" href="style.css">
-
+    <title>Martha Colhoun, Illustrator</title>
 </head>
 
     <body>
 
-    <header>
+        <div id="div1" class="container">
 
-        <div id = div2 class="flexdisplay" >
+            <!--    Code from side-by-side Godzilla jumbotron in bootstrap challenge-->
 
-                <p id="hdp1">Martha Colhoun, Illustrator</p>
-
-                    <p id="hdp2"><strong>Member<br>New Mexico Watercolor Society</strong> <br>
-                        <strong>Member<br>Society of Children's Book Writers and Illustrators</strong></p>
-
-            <div id="div3" class="flexdisplay" >
-
-                <img id="hdimg1"  src="public_html/images/micky-for-page-2.png" alt="Micheline the Cat"/>
-
+    <div class="card-group py-3">
+        <div class="card bg-info">
+            <div class="card-body text-center">
+                <img class="float-left my-3" src="public_html/images/micky-for-page-2.png"  alt="Micheline the Cat"
+                height="200" width="200">
             </div>
+        </div>
+        <div class="card bg-info">
+            <div class="card-body text-left fw-bold my-3">
+                <p id="hdp1" class="fs-1  fst-italic"><strong>Martha Colhoun, Illustrator</strong></p>
 
+                <p id="hdp2" class="fst-italic">Member<br>New Mexico Watercolor Society <br>
+                    Member<br>Society of Children's Book Writers and Illustrators</p>
+            </div>
         </div>
 
-            </header>
+<!--        Code for biography and one image-->
+
+
+        <div class="card-group py-3">
+            <div class="card bg-info">
+                <div class="card-body text-center">
+<!--                   PUT BIO HERE-->
+                </div>
+            </div>
+            <div class="card bg-info">
+                <div class="card-body text-left fw-bold my-3">
+                    <div class="card-group py-3">
+                        <div class="card bg-info">
+                            <div class="card-body text-center">
+
+                                <p id="hdp3" class="fs-1  fst-italic"><strong>Martha Colhoun, Illustrator</strong></p>
+
+                                <p id="hdp4" class="fst-italic">Member<br>New Mexico Watercolor Society <br>
+                                    Member<br>Society of Children's Book Writers and Illustrators</p>
+                            </div>
+                        </div>
+                        <div class="card bg-info">
+                            <div class="card-body text-left fw-bold my-3">
+
+                               SWAP THIS IMAGE ELEMENT WITH THE NEXT CARD'S TEXT TO MAKE BIO ON LEFT-->
+                                <img class="float-left my-3" src="public_html/images/micky-for-page-2.png"  alt="Micheline the Cat"
+                                     height="200" width="200">
+
+                            </div>
+                        </div>
+                </div>
+            </div>
 
 
 
+    <!-- STAYS NEAR BOTTOM Bootstrap Bundle with Popper -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-
+        p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+        </div>
+        </div>
     </body>
+
 </html>
+

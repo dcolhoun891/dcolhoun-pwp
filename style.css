@@ -1,45 +1,30 @@
-header {
-    background-color: turquoise;
-    border: solid black 2px;
-    /*border-radius: 25px;*/
-    padding: 1rem;
-}
+/*header {*/
+/*    background-color: turquoise;*/
+/*    border: solid black 2px;*/
+/*    !*border-radius: 25px;*!*/
+/*    padding: 1rem;*/
+/*}*/
 
-.flexdisplay {
-    display: flex;
-}
 
 #hdp1 {
     font-family: Papyrus, fantasy;
     font-style: italic;
     font-size: xxx-large;
-    display: block;
-    float: left;
-    /*margin-bottom: 0.5rem;*/
-    /*margin-top: 0.5rem;*/
+
 }
 
 #hdp2, #hdp3 {
     font-family: Papyrus, fantasy;
     font-style: italic;
     font-size: large;
-    display: block;
-    float: left;
-    /*margin-bottom: 0.25rem;*/
-    /*margin-top: 0.5rem;*/
+
 }
 
 #hdimg1 {
-    max-width: 20%;
-    height: auto;
-    border-radius: 50%;
+
+    /*border-radius: 50%;*/
     display: inline-block;
     border: solid black 2px;
-    text-align: right;
-    /*float: right;*/
-    /*margin-left: 25rem;*/
+
 }
 
-#div3 {
-        float: right;
-}
