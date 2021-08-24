@@ -23,11 +23,11 @@
 
 <body class="bg-dark m=5px">
 
-<div class="container">
+<div class="container-fluid">
 
     <!--    Code from side-by-side Godzilla jumbotron in bootstrap challenge-->
 
-    <div class="card-group py-3">
+    <div class="card-group">
         <div class="card bg-dark">
             <div class="card-body text-center w-auto">
                 <img class=" img-fluid border border-white border-3" src="images/martha-self-portrait.png"  alt="Martha's Self Portrait"/>
@@ -35,10 +35,10 @@
         </div>
         <div class="card bg-dark">
             <div class="card-body text-center text-white fw-bold my-3 w-auto">
-                <p class="fs-1  fst-italic"><strong>Welcome to<br/>Martha Colhoun, Illustrator</strong></p>
-
-                <p class="fst-italic"><strong>Member<br>New Mexico Watercolor Society <br><br>
-                    Member<br>Society of Children's Book Writers and Illustrators</strong></p>
+                <h3 class="fs-1  fst-italic"><strong>Welcome to<br/>Martha Colhoun, Illustrator</strong></h3>
+                <br>
+                <h3 class="fst-italic"><strong>Member<br>New Mexico Watercolor Society <br><br>
+                    Member<br>Society of Children's Book Writers and Illustrators</strong></h3>
             </div>
         </div>
     </div>
@@ -46,9 +46,9 @@
 
 <!--        SECOND ROW OF CARDS. USING SAME CODE BLOCK AS HEADER-->
 
-<div class="container">
+<div class="container-fluid">
 
-    <div class="card-group py-3">
+    <div class="card-group">
         <div class="card bg-dark">
             <div class="card-body bg-dark text-center text-white">
                 <p class="fs-1  fst-italic"><strong>Martha's Bio</strong></p>
@@ -71,8 +71,8 @@
 
 <!--        THIRD ROW OF CARDS. USING SAME CODE BLOCK AS IMAGE CARDS, ABOVE. 2 CARDS PER ROW-->
 
-<div class="container">
-    <div class="card-group py-3">
+<div class="container-fluid">
+    <div class="card-group">
         <div class="card bg-dark">
             <div class="card-body text-center text-white my-3">
                 <img class="img-fluid my-3 border border-white border-3" src="images/triple-hybrid.png" alt="Burket's Warbler"/>
@@ -91,8 +91,8 @@
 </div>
 <!--    FOURTH ROW OF CARDS. USING SAME CODE BLOCK AS IMAGE CARDS, ABOVE. 2 CARDS PER ROW-->
 
-<div class="container">
-    <div class="card-group py-3">
+<div class="container-fluid">
+    <div class="card-group">
         <div class="card bg-dark">
             <div class="card-body text-center text-white my-3">
                 <img class="img-fluid my-3 border border-white border-3" src="images/snow-mouse.png"
@@ -114,8 +114,8 @@
 
 <!--    FIFTH ROW OF CARDS. USING SAME CODE BLOCK AS IMAGE CARDS, ABOVE. 2 CARDS PER ROW-->
 
-<div class="container">
-    <div class="card-group py-3">
+<div class="container-fluid">
+    <div class="card-group">
         <div class="card bg-dark">
             <div class="card-body text-center text-white my-3">
                 <img class="img-fluid my-3 border border-white border-3" src="images/tasty-pens.png"
@@ -139,45 +139,45 @@
 <!--THE CONTACT FORM GOES HERE.-->
 <!--THE CONTACT FORM GOES HERE. Say it twice in case you missed it the first time.-->
 
-<main class="container">
-    <div class="row">
-        <div class="contact col-md-6 border border-white border-3">
+<main class="container-fluid">
+    <div class="row pt-4">
+        <div class="contact col-md-6 border border-white border-3 mx-auto">
 
             <!-- BEGIN CONTACT FORM -->
             <h2 class="text-white">Contact Me!</h2>
             <form action="http://localhost:4200/apis/" id="contact" method="post" novalidate>
                 <div class="form-group">
-                    <label for="name">Name</label>
+                    <label for="name" class="text-white">Name</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+<!--                            <span class="input-group-text"><i class="fa fa-user"></i></span>-->
                         </div>
                         <input class="form-control" id="name" name="name" placeholder="Your Name" type="text">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="email" class="text-white">Email</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+<!--                            <span class="input-group-text"><i class="fa fa-envelope"></i></span>-->
                         </div>
                         <input class="form-control" id="email" name="email" placeholder="Your Email" type="email">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="subject">Subject</label>
+                    <label for="subject" class="text-white">Subject</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fa fa-pencil"></i></span>
+<!--                            <span class="input-group-text"><i class="fa fa-pencil"></i></span>-->
                         </div>
                         <input class="form-control" id="subject" name="subject" placeholder="Subject" type="text">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="message">Message</label>
+                    <label for="message" class="text-white">Message</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fa fa-comment"></i></span>
+<!--                            <span class="input-group-text"><i class="fa fa-comment"></i></span>-->
                         </div>
                         <textarea class="form-control" id="message" maxlength="2000" name="message"
                                   placeholder="Your Message (2000 characters max)" required
@@ -186,9 +186,9 @@
                 </div>
                 <!-- Make sure to add site key provided by google recaptcha -->
 
-                <div class="g-recaptcha mt-5 mb-5" data-sitekey="6Le7QPgbAAAAAPMdEmhJeyo09HStcZ-rb7EB3b8f"></div>
-                <button class="btn btn-white border border-white border-2 text-white mb-5" type="submit"><strong>Submit</strong></button>
-                <button class="btn btn-white border border-white border-2 text-white mb-5" type="reset"><strong>Reset</strong></button>
+                <div class="g-recaptcha mt-5 mb-5" data-sitekey="6LcrwR4cAAAAAIHV5pVeOfvlHC2eAby-AwBFOr8w"></div>
+                <button class="btn btn-white border border-white border-2 text-white mb-5 mx-auto" type="submit"><strong>Submit</strong></button>
+                <button class="btn btn-white border border-white border-2 text-white mb-5 mx-auto" type="reset"><strong>Reset</strong></button>
             </form>
 
 
@@ -202,7 +202,7 @@
 </div>
 
 <footer class="py-4 text-white">
-    <div class="container">
+    <div class="container-fluid">
         <a class="text-white" href="https://nmwatercolorsociety.org/"
            target="_blank">New Mexico Watercolor Society</a> | <a class="text-white" href="https://www.scbwi.org/" target="_blank">Society of Children's Book Writers and Illustrators</a>
     </div>
@@ -239,7 +239,7 @@
         <h4>Thank you for visiting my portfolio page!</h4>
     </div>
     <div class="card-body">
-        <p class="card-text text-white"><em><strong>All images and text &copy Martha Colhoun, 2021.</strong></em>.</p>
+        <p class="card-text text-center text-white"><em><strong>All images and text &copy Martha Colhoun, 2021.</strong></em></p>
     </div>
 </div>
 
